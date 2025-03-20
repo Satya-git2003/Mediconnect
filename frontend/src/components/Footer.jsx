@@ -12,13 +12,13 @@ const Footer = () => {
             </div>
 
             {/*------------------  Center Section   ---------------*/}
-            <div>
+           <div>
                 <p className='text-xl font-medium mb-5'>COMPANY</p>
                 <ul className='flex flex-col gap-2 text-gray-600'>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact us</li>
-                    <li>Privacy Policy</li>
+                    <li><a href="/" className="hover:text-blue-500">Home</a></li>
+                    <li><a href="/about" className="hover:text-blue-500">About us</a></li>
+                    <li><a href="/contact" className="hover:text-blue-500">Contact us</a></li>
+                    <li><a href="/privacy-policy" className="hover:text-blue-500">Privacy Policy</a></li>
                 </ul>
             </div>
 
@@ -26,8 +26,8 @@ const Footer = () => {
             <div>
                 <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
                 <ul className='flex flex-col gap-2 text-gray-600'>
-                    <li>8480292655</li>
-                    <li>spsahoo2003@gmail.com</li>
+                    <li> <a href="tel:+918480292655" className="text-blue-500 hover:underline">+91 8480292655</a></li>
+                    <li><a href="mailto:spsahoo2003@gmail.com" className="text-blue-500 hover:underline">spsahoo2003@gmail.com</a></li>
                 </ul>
             </div>
         </div>
