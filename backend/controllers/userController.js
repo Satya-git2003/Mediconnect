@@ -6,7 +6,7 @@ import { v2 as cloudinary } from 'cloudinary'
 import appointmentModel from '../models/appointmentModel.js'
 import doctorModel from '../models/doctorModel.js'
 import razorpay from 'razorpay'
-import Razorpay from 'razorpay'
+
 
 // API to register user
 const registerUser = async (req, res) => {
@@ -223,7 +223,7 @@ const paymentRazorpay = async (req, res) => {
         const appointmentData = await appointmentModel.findById(appointmentId)
 
         if (!appointmentData || appointmentData.cancelled) {
-            return res.json({ successfalse, message: "Appointment Cancelled or not found" })
+            return res.json({ success: false, message: "Appointment Cancelled or not found" })
         }
 
         // creating options for razorpay payment
